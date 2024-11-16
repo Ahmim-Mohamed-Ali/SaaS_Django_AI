@@ -8,12 +8,11 @@
 </head>
 <body>
     {% include 'nav/navbar.html' %}
-    <h1>Hello World</h1>
+    {% include 'base/messages.html'  with messages=messages %} 
 
     <p>{{ page_title}}</p>
 
     {% block content %}
-    Hiakaka 
     {% endblock content%}
     
 </body>
